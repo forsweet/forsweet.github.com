@@ -127,12 +127,15 @@ $ npm config set registry http://registry.cnpmjs.org
 下面聊聊如何实现多处来同步编辑博客,主要有如下几个方案
 
 * VPS
+    
     VPS方案需要一台VPS主机,在上面配置好Hexo所需要的环境,SSH到主机编辑同步即可
 
 * 云coding环境
+	
 	比较有名的有[Koding][],[Cloud9][].该方案类似于主机,好处是可以直接在线编辑,koding平台在国内貌似被墙.
 	参见[koding非教程贴][]
 * github管理
+
 	直接用把Blog所在的文件夹当成一个git库来同步,好处是有git就行了,但是在想要编辑blog的机器上都要配置Hexo所需的环境,几个需要注意的事项参见[issues752]:
 	*  如果主题是通过git管理的，需要将主题文件夹下的.git文件夹删除，才能同步Blog文件夹（.git文件夹是隐藏的，需要显示隐藏文件才能删除，Linux下需要`rm -rf`命令才能删除，Mac没用过，不清楚）。
 	* 按照Blog目录下自带的.gitignore文件,node_modules文件夹是不会同步的,所以同步之后需要自己再次进行`npm install`，但是注意，不要进行`hexo init`了，否则\_config.yml全都白弄了。

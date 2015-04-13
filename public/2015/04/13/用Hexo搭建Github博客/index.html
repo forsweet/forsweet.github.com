@@ -75,8 +75,6 @@ Ubuntu,Debian: sudo apt-get install git-c">
 					
 						<li><a href="/archives">Archives</a></li>
 					
-						<li><a href="/about">About</a></li>
-					
 					<li>
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
@@ -104,7 +102,7 @@ Ubuntu,Debian: sudo apt-get install git-c">
 		<a href="http://forsweet.github.com/about" title="Forsweet" target="_blank" itemprop="author">Forsweet</a>
 		
   <p class="article-time">
-    <time datetime="2015-04-13T09:07:21.087Z" itemprop="datePublished"> 发表于 2015-04-13</time>
+    <time datetime="2015-04-13T13:26:30.000Z" itemprop="datePublished"> 发表于 2015-04-13</time>
     
   </p>
 </header>
@@ -182,11 +180,15 @@ Ubuntu,Debian: sudo apt-get install git-c">
 </ul>
 <h2 id="编写博客">编写博客</h2><p>编写博客比较简单,教程很容易找,官方文档见<a href="http://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external">hexo写作</a>.<br>下面聊聊如何实现多处来同步编辑博客,主要有如下几个方案</p>
 <ul>
-<li><p>VPS<br>  VPS方案需要一台VPS主机,在上面配置好Hexo所需要的环境,SSH到主机编辑同步即可</p>
+<li><p>VPS</p>
+<p>  VPS方案需要一台VPS主机,在上面配置好Hexo所需要的环境,SSH到主机编辑同步即可</p>
 </li>
-<li><p>云coding环境<br>  比较有名的有<a href="https://koding.com" target="_blank" rel="external">Koding</a>,<a href="https://c9.io/" target="_blank" rel="external">Cloud9</a>.该方案类似于主机,好处是可以直接在线编辑,koding平台在国内貌似被墙.<br>  参见<a href="http://hahack.com/tools/koding_intro/" target="_blank" rel="external">koding非教程贴</a></p>
+<li><p>云coding环境</p>
+<p>  比较有名的有<a href="https://koding.com" target="_blank" rel="external">Koding</a>,<a href="https://c9.io/" target="_blank" rel="external">Cloud9</a>.该方案类似于主机,好处是可以直接在线编辑,koding平台在国内貌似被墙.<br>  参见<a href="http://hahack.com/tools/koding_intro/" target="_blank" rel="external">koding非教程贴</a></p>
 </li>
-<li>github管理<br>  直接用把Blog所在的文件夹当成一个git库来同步,几个需要注意的事项参见<a href="https://github.com/hexojs/hexo/issues/752" target="_blank" rel="external">issues752</a>:<ul>
+<li><p>github管理</p>
+<p>  直接用把Blog所在的文件夹当成一个git库来同步,好处是有git就行了,但是在想要编辑blog的机器上都要配置Hexo所需的环境,几个需要注意的事项参见<a href="https://github.com/hexojs/hexo/issues/752" target="_blank" rel="external">issues752</a>:</p>
+<ul>
 <li>如果主题是通过git管理的，需要将主题文件夹下的.git文件夹删除，才能同步Blog文件夹（.git文件夹是隐藏的，需要显示隐藏文件才能删除，Linux下需要<code>rm -rf</code>命令才能删除，Mac没用过，不清楚）。</li>
 <li>按照Blog目录下自带的.gitignore文件,node_modules文件夹是不会同步的,所以同步之后需要自己再次进行<code>npm install</code>，但是注意，不要进行<code>hexo init</code>了，否则_config.yml全都白弄了。</li>
 </ul>
@@ -243,7 +245,7 @@ Ubuntu,Debian: sudo apt-get install git-c">
  
 
 <div class="next">
-<a href="/2015/04/10/hello-world/"  title="Hello World">
+<a href="/2015/04/13/hello-world/"  title="Hello World">
  <strong>下一篇：</strong><br/> 
  <span>Hello World
 </span>
@@ -253,6 +255,10 @@ Ubuntu,Debian: sudo apt-get install git-c">
 </nav>
 
 	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/04/13/用Hexo搭建Github博客/" data-title="用Hexo 3 搭建github blog" data-url="http://forsweet.github.com/2015/04/13/用Hexo搭建Github博客/"></div>
+</section>
+
 
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
@@ -310,31 +316,8 @@ Ubuntu,Debian: sudo apt-get install git-c">
 </div>
 
 
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
   
 
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
 
 </aside>
 </div>
@@ -348,7 +331,7 @@ Ubuntu,Debian: sudo apt-get install git-c">
 	
 	
 	<section class="info">
-		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+		<p> Hello ,I&#39;m Bill Gates in Apple. <br/>
 			This is my blog,believe it or not.</p>
 	</section>
 	 
@@ -484,6 +467,18 @@ $(document).ready(function(){
 </script>
 
 
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"sweet"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 
