@@ -1,5 +1,7 @@
 title: "Django入门"
-tags:[python,django,web]
+date:
+catagories: python
+tags: [python,django,web]
 ---
 #简介
 

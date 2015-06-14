@@ -1,6 +1,6 @@
 title: 用Hexo 3 搭建github blog
 date: 
-categories: GITHUB
+categories: hexo
 tags: [git,blog,hexo]
 ---
 
