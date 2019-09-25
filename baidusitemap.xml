@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  <url>
+    <loc>https://forsweet.github.com/hexo/%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGithub%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2019-09-25</lastmod>
+  </url>  <url>
+    <loc>https://forsweet.github.com/uncategorized/hello-world/</loc>
+    <lastmod>2019-09-20</lastmod>
+  </url>
 </urlset>
